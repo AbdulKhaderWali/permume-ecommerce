@@ -4,7 +4,7 @@ const Button = ({ children, href, onClick, variant = 'primary', className = '', 
   const baseStyles = 'py-3 px-8 rounded-lg transition-colors font-semibold inline-flex items-center justify-center gap-2';
 
   const styles = {
-    primary: 'bg-gold-500 text-black hover:bg-gold-600',
+    primary: 'bg-gold-500 text-gray-900 hover:bg-gold-600',
     secondary: 'bg-transparent border border-gold-500 text-gold-500 hover:bg-gold-500 hover:text-black',
     text: 'text-red-500 hover:text-red-700'
   };

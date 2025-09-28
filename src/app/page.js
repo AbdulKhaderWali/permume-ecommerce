@@ -144,7 +144,7 @@ export default function HomePage() {
       <div className="bg-black py-20 text-white">
         <div className="container mx-auto grid md:grid-cols-2 gap-12 items-center px-4">
           <div>
-            <img src="https://images.unsplash.com/photo-1622055139359-5c6cf1558069?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Luxury Experience" className="rounded-lg shadow-xl" />
+            <img src="https://media.istockphoto.com/id/1326570912/photo/glass-bottle-of-perfume-on-golden-silk-background.jpg?s=612x612&w=0&k=20&c=rZwmd4ks8TjmgKOlkVJqb1_A2o-44y2lDYCgo8vk_1c=" alt="Luxury Experience" className="rounded-lg shadow-xl" />
           </div>
           <div className="text-center md:text-left">
             <h2 className="text-4xl font-serif font-bold text-gold-500 mb-6">The Elysian Experience</h2>

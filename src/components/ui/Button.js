@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
-const Button = ({ children, href, onClick, variant = 'primary', className = '' }) => {
-  const baseStyles = 'py-3 px-8 rounded-lg transition-colors font-semibold';
+const Button = ({ children, href, onClick, variant = 'primary', className = '', icon: Icon, ...props }) => {
+  const baseStyles = 'py-3 px-8 rounded-lg transition-colors font-semibold inline-flex items-center justify-center gap-2';
 
   const styles = {
     primary: 'bg-gold-500 text-black hover:bg-gold-600',
@@ -11,17 +11,24 @@ const Button = ({ children, href, onClick, variant = 'primary', className = '' }
 
   const combinedClassName = `${baseStyles} ${styles[variant]} ${className}`;
 
+  const content = (
+    <>
+      {Icon && <Icon className="w-5 h-5" />}
+      {children}
+    </>
+  );
+
   if (href) {
     return (
-      <Link href={href} className={combinedClassName}>
-        {children}
+      <Link href={href} className={combinedClassName} {...props}>
+        {content}
       </Link>
     );
   }
 
   return (
-    <button onClick={onClick} className={combinedClassName}>
-      {children}
+    <button onClick={onClick} className={combinedClassName} type="button" {...props}>
+      {content}
     </button>
   );
 };

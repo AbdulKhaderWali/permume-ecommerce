@@ -45,7 +45,7 @@ export default function HomePage() {
             </Button>
           </div>
           <div>
-            <img src="https://images.unsplash.com/photo-1585399009939-f1f5b2a7c8a3?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Perfumery" className="rounded-lg shadow-xl" />
+            <img src="https://akm-img-a-in.tosshub.com/lingo/hrb/images/story/202409/66e16720d48af-fragrance-114711995-16x9.png?size=1200:675" alt="Perfumery" className="rounded-lg shadow-xl" />
           </div>
         </div>
       </div>
@@ -102,25 +102,25 @@ export default function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             <Link href="/shop?note=floral" className="group">
               <div className="overflow-hidden rounded-lg">
-                <img src="https://png.pngtree.com/thumb_back/fh260/background/20231110/pngtree-watercolour-diwali-background-with-pink-floral-design-image_14005905.jpg" alt="Floral" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
+                <img src="https://images.prestigeonline.com/wp-content/uploads/sites/3/2022/05/31122737/lsa-hero-2-1600x900.jpeg" alt="Floral" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-xl font-serif text-gold-500 mt-4">Floral</h3>
             </Link>
             <Link href="/shop?note=woody" className="group">
               <div className="overflow-hidden rounded-lg">
-                <img src="https://images.unsplash.com/photo-1612294037333-23b6334153e0?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Woody" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
+                <img src="https://www.clivechristian.com/cdn/shop/files/blog-img-vertical-woody-fragrance-family_1000x5000.jpg?v=1668696521" alt="Woody" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-xl font-serif text-gold-500 mt-4">Woody</h3>
             </Link>
             <Link href="/shop?note=oriental" className="group">
               <div className="overflow-hidden rounded-lg">
-                <img src="https://images.unsplash.com/photo-1559191285-7a2f3a435f5e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oriental" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
+                <img src="https://cdn.shopify.com/s/files/1/1234/5794/files/what-i-wish-everyone-knew-about-oriental-fragrance.jpg?v=1562063964" alt="Oriental" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-xl font-serif text-gold-500 mt-4">Oriental</h3>
             </Link>
             <Link href="/shop?note=fresh" className="group">
               <div className="overflow-hidden rounded-lg">
-                <img src="https://images.unsplash.com/photo-1517224792281-b36a084c3c65?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fresh" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
+                <img src="https://perfumesociety.org/wp-content/uploads/2019/06/What-is-fresh-%E2%80%93-fragrance-family-friday-at-The-Perfume-Society-our-suggestion-of-scents-to-try.jpg" alt="Fresh" className="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300" />
               </div>
               <h3 className="text-xl font-serif text-gold-500 mt-4">Fresh</h3>
             </Link>

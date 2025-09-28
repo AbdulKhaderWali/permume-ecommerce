@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useContext } from 'react';
 import { CartContext } from '@/context/CartContext';
+import Button from '../ui/Button';
 
 const ProductCard = ({ product }) => {
   const { addToCart } = useContext(CartContext);
@@ -19,12 +20,13 @@ const ProductCard = ({ product }) => {
         
       </Link>
       <div className="p-4 pt-0">
-        <button 
+        <Button 
           onClick={() => addToCart(product)}
-          className="w-full bg-gold-500 text-black py-2 rounded-lg hover:bg-gold-600 transition-colors"
+          variant="primary"
+          className="w-full"
         >
           Add to Cart
-        </button>
+        </Button>
       </div>
     </div>
   );

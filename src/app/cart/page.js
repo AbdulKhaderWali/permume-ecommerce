@@ -3,6 +3,7 @@
 import { useContext } from 'react';
 import { CartContext } from '@/context/CartContext';
 import Spinner from '@/components/ui/Spinner';
+import Button from '@/components/ui/Button';
 
 const CartPage = () => {
   const { cart, removeFromCart, updateQuantity, loading } = useContext(CartContext);
@@ -36,15 +37,15 @@ const CartPage = () => {
                   onChange={(e) => updateQuantity(item.id, parseInt(e.target.value))}
                   className="w-16 text-center bg-gray-800 rounded-lg mx-4" 
                 />
-                <button onClick={() => removeFromCart(item.id)} className="text-red-500 hover:text-red-700">Remove</button>
+                <Button onClick={() => removeFromCart(item.id)} variant="text">Remove</Button>
               </div>
             </div>
           ))}
           <div className="text-right mt-8">
             <h2 className="text-2xl font-serif">Total: <span className="text-gold-500">${total.toFixed(2)}</span></h2>
-            <button className="bg-gold-500 text-black py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors mt-4">
+            <Button variant="primary" className="mt-4">
               Checkout
-            </button>
+            </Button>
           </div>
         </div>
       )}

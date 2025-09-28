@@ -4,6 +4,7 @@ import { useState, useEffect, useContext } from 'react';
 import { perfumes } from '@/data/perfumes';
 import Spinner from '@/components/ui/Spinner';
 import { CartContext } from '@/context/CartContext';
+import Button from '@/components/ui/Button';
 
 const ProductDetailsPage = ({ params }) => {
   const [product, setProduct] = useState(null);
@@ -39,12 +40,12 @@ const ProductDetailsPage = ({ params }) => {
           <h1 className="text-4xl font-serif font-bold mb-4">{product.name}</h1>
           <p className="text-2xl text-gold-500 mb-4">${product.price}</p>
           <p className="text-lg mb-6">{product.description}</p>
-          <button 
+          <Button 
             onClick={() => addToCart(product)}
-            className="bg-gold-500 text-black py-3 px-8 rounded-lg hover:bg-gold-600 transition-colors"
+            variant="primary"
           >
             Add to Cart
-          </button>
+          </Button>
         </div>
       </div>
     </div>

@@ -1,10 +1,30 @@
+'use client';
+
+import { useState } from 'react';
 import ProductList from '@/components/products/ProductList';
+import Filter from '@/components/products/Filter';
 
 const ShopPage = () => {
+  const [filters, setFilters] = useState({
+    category: 'all',
+    brand: 'all',
+    priceRange: [0, 500],
+  });
+
+  const handleFilterChange = (newFilters) => {
+    setFilters(newFilters);
+  };
+
   return (
-    <div className="container mx-auto py-8">
-      <h1 className="text-4xl font-serif font-bold text-center mb-8 text-white">Our Collection</h1>
-      <ProductList />
+    <div className="container mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <header className="text-center mb-12">
+        <h1 className="text-5xl font-extrabold text-white tracking-tight font-serif">Our Exquisite Collection</h1>
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-400">
+          Discover your signature scent from our curated selection of the world's finest perfumes.
+        </p>
+      </header>
+      <Filter onFilterChange={handleFilterChange} />
+      <ProductList filters={filters} />
     </div>
   );
 };

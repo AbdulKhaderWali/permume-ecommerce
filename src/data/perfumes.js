@@ -2,6 +2,8 @@ export const perfumes = [
   {
     id: 1,
     name: 'Chanel No. 5',
+    brand: 'Chanel',
+    category: 'for-her',
     price: 150,
     description: 'A timeless, elegant, and floral fragrance for women. A classic scent that is perfect for any occasion.',
     image: 'https://cdn.pixabay.com/photo/2017/03/14/11/39/perfume-2142817_1280.jpg',
@@ -9,6 +11,8 @@ export const perfumes = [
   {
     id: 2,
     name: 'Dior Sauvage',
+    brand: 'Dior',
+    category: 'for-him',
     price: 100,
     description: 'A fresh, spicy, and woody fragrance for men. A powerful and noble scent that is perfect for the modern man.',
     image: 'https://cdn.pixabay.com/photo/2021/02/13/23/23/perfume-6013027_1280.jpg',
@@ -16,6 +20,8 @@ export const perfumes = [
   {
     id: 3,
     name: 'Creed Aventus',
+    brand: 'Creed',
+    category: 'for-him',
     price: 300,
     description: 'A fruity, rich, and woody fragrance for men. A sophisticated and confident scent that is perfect for the modern man.',
     image: 'https://cdn.pixabay.com/photo/2021/12/28/16/40/perfume-6899766_1280.jpg',
@@ -23,6 +29,8 @@ export const perfumes = [
   {
     id: 4,
     name: 'Tom Ford Black Orchid',
+    brand: 'Tom Ford',
+    category: 'for-her',
     price: 200,
     description: 'A luxurious, sensual, and floral fragrance for women. A dark and mysterious scent that is perfect for the modern woman.',
     image: 'https://cdn.pixabay.com/photo/2015/03/18/05/19/perfume-678828_1280.jpg',
@@ -30,6 +38,8 @@ export const perfumes = [
   {
     id: 5,
     name: 'Jo Malone London English Pear & Freesia',
+    brand: 'Jo Malone London',
+    category: 'for-her',
     price: 140,
     description: 'A fresh, fruity, and floral fragrance for women. A mellow and golden scent that is perfect for the modern woman.',
     image: 'https://m.media-amazon.com/images/I/71t9wFKYOcL._UF350,350_QL80_.jpg',
@@ -37,8 +47,37 @@ export const perfumes = [
   {
     id: 6,
     name: 'Paco Rabanne 1 Million',
+    brand: 'Paco Rabanne',
+    category: 'for-him',
     price: 90,
     description: 'A spicy, woody, and leather fragrance for men. A flamboyant and audacious scent that is perfect for the modern man.',
     image: 'https://static.wixstatic.com/media/1738b0_ca61855377b942d3af6418a6add6798e~mv2.jpg/v1/fill/w_568,h_568,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/1738b0_ca61855377b942d3af6418a6add6798e~mv2.jpg',
+  },
+  {
+    id: 7,
+    name: 'Yves Saint Laurent Black Opium',
+    brand: 'Yves Saint Laurent',
+    category: 'for-her',
+    price: 125,
+    description: 'An addictive, gourmand, and floral fragrance for women. A modern and vibrant scent that is perfect for the modern woman.',
+    image: 'https://hips.hearstapps.com/hmg-prod/images/712927-1653522935.jpg',
+  },
+  {
+    id: 8,
+    name: 'Giorgio Armani Acqua di Gio',
+    brand: 'Giorgio Armani',
+    category: 'for-him',
+    price: 85,
+    description: 'A fresh, aquatic, and woody fragrance for men. A classic and timeless scent that is perfect for the modern man.',
+    image: 'https://www.giorgioarmanibeauty.co.uk/dw/image/v2/AAQP_PRD/on/demandware.static/-/Sites-gac-master-catalog/en_GB/dw93330953/products/ww-00012-arm/3360372058878_giorgio_armani_acqua_di_gio_eau_de_toilette_100ml.jpg?sw=400&sh=400&sm=cut&sfrm=png&q=70',
+  },
+  {
+    id: 9,
+    name: 'Maison Francis Kurkdjian Baccarat Rouge 540',
+    brand: 'Maison Francis Kurkdjian',
+    category: 'unisex',
+    price: 425,
+    description: 'A luminous, sophisticated, and amber fragrance for both men and women. A poetic alchemy that is perfect for any occasion.',
+    image: 'https://www.franciskurkdjian.com/dw/image/v2/BJSG_PRD/on/demandware.static/-/Sites-mfk-master-catalog/default/dw75433131/images/zoom/RA13224A_Baccarat-Rouge-540-EDP-70ml.jpg?sw=1024&sh=1024&sm=fit',
   },
 ];

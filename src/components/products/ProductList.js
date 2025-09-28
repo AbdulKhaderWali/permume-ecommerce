@@ -93,10 +93,22 @@ const ProductList = ({ filters, onFilteredCountChange }) => {
   }
 
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-      {filteredProducts.map((product) => (
-        <ProductCard key={product.id} product={product} />
-      ))}
+    <div className="w-full">
+      {filteredProducts.length === 0 ? (
+        <div className="text-center py-20 px-4">
+          <div className="text-6xl text-gray-600 mb-6">🔍</div>
+          <h3 className="text-2xl font-serif text-white mb-4">No products found</h3>
+          <p className="text-gray-400 max-w-md mx-auto leading-relaxed">
+            Try adjusting your filters or browse our complete collection to discover your perfect fragrance.
+          </p>
+        </div>
+      ) : (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6">
+          {filteredProducts.map((product) => (
+            <ProductCard key={product.id} product={product} />
+          ))}
+        </div>
+      )}
     </div>
   );
 };

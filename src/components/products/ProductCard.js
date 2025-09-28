@@ -67,29 +67,29 @@ const ProductCard = ({ product }) => {
   };
 
   return (
-    <article className="group relative bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-white rounded-xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-gold-500/30 hover:-translate-y-2 border border-gray-800/50">
+    <article className="group relative bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-white rounded-xl shadow-2xl overflow-hidden transition-all duration-300 hover:shadow-gold-500/30 hover:-translate-y-2 border border-gray-800/50 w-full max-w-sm mx-auto">
       {/* Favorite Button */}
       <button
         onClick={handleFavoriteToggle}
-        className="absolute top-4 right-4 z-10 p-2 rounded-full bg-black/30 backdrop-blur-sm hover:bg-black/50 transition-all duration-200"
+        className="absolute top-3 right-3 z-10 p-2 rounded-full bg-black/40 backdrop-blur-sm hover:bg-black/60 transition-all duration-200"
         aria-label={isFavorited ? 'Remove from favorites' : 'Add to favorites'}
       >
         {isFavorited ? (
-          <FaHeart className="text-red-500 text-lg" />
+          <FaHeart className="text-red-500 text-sm" />
         ) : (
-          <FaRegHeart className="text-white text-lg hover:text-red-300" />
+          <FaRegHeart className="text-white text-sm hover:text-red-300" />
         )}
       </button>
 
       {/* Sale Badge */}
       {product.onSale && (
-        <div className="absolute top-4 left-4 z-10 px-3 py-1 bg-red-600 text-white text-xs font-bold rounded-full uppercase tracking-wide">
+        <div className="absolute top-3 left-3 z-10 px-2 py-1 bg-red-600 text-white text-xs font-bold rounded-full uppercase tracking-wide">
           Sale
         </div>
       )}
 
       <Link href={`/products/${product.id}`} className="block" aria-label={`View ${product.name} details`}>
-        <div className="relative h-72 overflow-hidden">
+        <div className="relative h-64 overflow-hidden">
           {!imageError ? (
             <img 
               src={product.image} 
@@ -106,16 +106,16 @@ const ProductCard = ({ product }) => {
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent group-hover:from-black/40 transition-all duration-300"></div>
           
           {/* Quick preview on hover */}
-          <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-            <p className="text-white text-sm font-light line-clamp-2">
+          <div className="absolute bottom-3 left-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <p className="text-white text-xs font-light line-clamp-2">
               {product.description || 'Discover this exquisite fragrance'}
             </p>
           </div>
         </div>
 
-        <div className="p-5 space-y-3">
+        <div className="p-4 space-y-2">
           <div className="flex items-center justify-between">
-            <p className="text-sm text-gold-500 font-semibold uppercase tracking-wider">
+            <p className="text-xs text-gold-500 font-semibold uppercase tracking-wider">
               {product.brand}
             </p>
             {product.size && (
@@ -125,7 +125,7 @@ const ProductCard = ({ product }) => {
             )}
           </div>
           
-          <h3 className="text-xl font-serif font-bold leading-tight line-clamp-2 group-hover:text-gold-300 transition-colors duration-200">
+          <h3 className="text-lg font-serif font-bold leading-tight line-clamp-2 group-hover:text-gold-300 transition-colors duration-200">
             {product.name}
           </h3>
 
@@ -136,7 +136,7 @@ const ProductCard = ({ product }) => {
                 {renderStars(product.rating)}
               </div>
               <span className="text-xs text-gray-400">
-                ({product.reviewCount || 0} reviews)
+                ({product.reviewCount || 0})
               </span>
             </div>
           )}
@@ -145,15 +145,15 @@ const ProductCard = ({ product }) => {
           <div className="flex items-center gap-2">
             {product.originalPrice && product.originalPrice > product.price ? (
               <>
-                <span className="text-lg font-light text-gray-400 line-through">
+                <span className="text-sm font-light text-gray-400 line-through">
                   {formatPrice(product.originalPrice)}
                 </span>
-                <span className="text-xl font-bold text-gold-400">
+                <span className="text-lg font-bold text-gold-400">
                   {formatPrice(product.price)}
                 </span>
               </>
             ) : (
-              <span className="text-xl font-bold text-gold-400">
+              <span className="text-lg font-bold text-gold-400">
                 {formatPrice(product.price)}
               </span>
             )}
@@ -170,7 +170,7 @@ const ProductCard = ({ product }) => {
         </div>
       </Link>
 
-      <div className="p-5 pt-0">
+      <div className="p-4 pt-0">
         <Button 
           onClick={handleAddToCart}
           variant={isAdding ? "secondary" : "primary"}
@@ -179,7 +179,7 @@ const ProductCard = ({ product }) => {
           disabled={isAdding || product.outOfStock}
           aria-label={isAdding ? 'Added to cart' : 'Add to cart'}
         >
-          {product.outOfStock ? 'Out of Stock' : isAdding ? 'Added to Cart!' : 'Add to Cart'}
+          {product.outOfStock ? 'Out of Stock' : isAdding ? 'Added!' : 'Add to Cart'}
         </Button>
         
         {/* Stock indicator */}
